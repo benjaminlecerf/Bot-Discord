@@ -51,16 +51,16 @@ exports.exec = async (Bastion, message, args) => {
           value: `\`\`\`css\n${commands.map(c => c.help.name).join('\n')}\`\`\``
         },
         {
-          name: 'Need more details?',
+          name: 'Besoin de plus de détails?',
           value: 'Check out the help message of the command, using the `help <command>` command.'
         },
         {
-          name: 'Want the complete list?',
-          value: 'To get a complete list of all the commands with details, visit [my website](https://bastionbot.org/) and check out the commands page: https://bastionbot.org/commands.'
+          name: 'Tu veux la liste complète ?',
+          value: 'Pour obtenir une liste complète de toutes les commandes avec des détails, visite [mon site](https://bastionbot.org/) et consultez la page des commandes: https://bastionbot.org/commands.'
         }
       ],
       footer: {
-        text: `Did you know? There are ${Bastion.commands.size} commands in this version of Bastion!`
+        text: `Il y a actuelement ${Bastion.commands.size} commandes dans cette version du bot!`
       }
     }
   });
