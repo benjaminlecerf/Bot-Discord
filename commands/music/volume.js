@@ -31,7 +31,7 @@ exports.exec = async (Bastion, message, args) => {
   await message.guild.music.textChannel.send({
     embed: {
       color: color,
-      description: `Volume: ${message.guild.voiceConnection.dispatcher.volume * 50}%`
+      description: `Volume: ${message.guild.voiceConnection.dispatcher.volume * 10}%`
     }
   }).catch(e => {
     Bastion.log.error(e);

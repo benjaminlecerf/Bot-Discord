@@ -330,7 +330,7 @@ async function startStreamDispatcher(guild, connection) {
         url: guild.music.songs[0].thumbnail
       },
       footer: {
-        text: `🔉 ${guild.music.dispatcher.volume * 50}% • Duration: ${guild.music.songs[0].duration || 'N/A'} • Requester: ${guild.music.songs[0].requester}`
+        text: `🔉 ${guild.music.dispatcher.volume * 10}% • Duration: ${guild.music.songs[0].duration || 'N/A'} • Requester: ${guild.music.songs[0].requester}`
       }
     }
   }).catch(e => {
