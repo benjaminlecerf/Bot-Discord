@@ -11,8 +11,8 @@ exports.exec = async (Bastion, message, args) => {
     return await message.channel.send({
       embed: {
         color: Bastion.colors.GOLD,
-        title: 'List of Command Categories',
-        description: `Use the \`${this.help.name} <category>\` command to list all the commands in the specified category.\nTo get a complete list of all the commands with details, visit [my website](https://bastionbot.org/) and check out the commands section: https://bastionbot.org/commands.`,
+        title: 'Listes des catégories de commandes',
+        description: `Utilise la commande \`${this.help.name} <category>\` pour lister les commandes de la catégorie.\nPour obtenir une liste complète de toutes les commandes avec des détails, visite [mon site](https://bastionbot.org/) et consultez la page des commandes: https://bastionbot.org/commands.`,
         fields: [
           {
             name: 'Command Categories',
@@ -20,7 +20,7 @@ exports.exec = async (Bastion, message, args) => {
           }
         ],
         footer: {
-          text: `Did you know? There are ${Bastion.commands.size} commands in this version of Bastion!`
+          text: `Il y a actuellement ${Bastion.commands.size} commandes dans cette version!`
         }
       }
     });
