@@ -22,7 +22,7 @@ exports.exec = async (Bastion, message, args) => {
 
   let color = Bastion.colors.GREEN;
   if (args.value) {
-    message.guild.voiceConnection.dispatcher.setVolume(args.value / 50);
+    message.guild.voiceConnection.dispatcher.setVolume(args.value / 10);
   }
   else {
     color = Bastion.colors.BLUE;
