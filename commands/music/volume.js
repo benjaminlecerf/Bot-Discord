@@ -22,7 +22,7 @@ exports.exec = async (Bastion, message, args) => {
 
   let color = Bastion.colors.GREEN;
   if (args.value) {
-    message.guild.voiceConnection.dispatcher.setVolume(args.value / 10);
+    message.guild.voiceConnection.dispatcher.setVolume(args.value / 50);
   }
   else {
     color = Bastion.colors.BLUE;
@@ -31,7 +31,7 @@ exports.exec = async (Bastion, message, args) => {
   await message.guild.music.textChannel.send({
     embed: {
       color: color,
-      description: `Volume: ${message.guild.voiceConnection.dispatcher.volume * 10}%`
+      description: `Volume: ${message.guild.voiceConnection.dispatcher.volume * 50}%`
     }
   }).catch(e => {
     Bastion.log.error(e);
