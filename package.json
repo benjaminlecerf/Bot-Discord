@@ -16,13 +16,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheBastionBot/Bastion.git"
+    "url": "https://github.com/benjaminlecerf/Bot-Discord.git"
   },
   "author": "Sankarsan Kampa",
   "authorUrl": "https://sankarsankampa.com",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/TheBastionBot/Bastion/issues"
+    "url": "https://github.com/benjaminlecerf/Bot-Discord/issues"
   },
   "homepage": "https://bastionbot.org",
   "dependencies": {
