@@ -31,8 +31,8 @@ exports.exec = async (Bastion, message, args) => {
     return await message.channel.send({
       embed: {
         color: Bastion.colors.RED,
-        title: 'Command Cateogry Not Found',
-        description: 'Use the `commands` command without any arguments to get a list of all the available command categories.'
+        title: 'Cateogry de commande introuvable',
+        description: 'Utilisez la commande `commands` sans aucun argument pour obtenir une liste de toutes les catégories de commandes disponibles.'
       }
     });
   }
