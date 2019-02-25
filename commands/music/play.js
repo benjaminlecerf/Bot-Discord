@@ -260,8 +260,7 @@ async function startStreamDispatcher(guild, connection) {
       '--simulate',
       '--no-warnings',
       '--format=bestaudio[protocol^=http]',
-      '--user-agent=BastionDiscordBot (https://bastionbot.org)',
-      '--referer=https://bastionbot.org',
+      '--user-agent=Mozilla/5.0 (X11; Linux i586; rv:31.0) Gecko/20100101 Firefox/31.0',
       '--youtube-skip-dash-manifest'
     ];
 
