@@ -15,7 +15,7 @@ exports.exec = async (Bastion, message, args) => {
         description: `Utilise la commande \`${this.help.name} <category>\` pour lister les commandes de la catégorie.\nPour obtenir une liste complète de toutes les commandes avec des détails, visite [mon site](https://bastionbot.org/) et consultez la page des commandes: https://bastionbot.org/commands.`,
         fields: [
           {
-            name: 'Command Categories',
+            name: 'Liste des Catégories de commandes',
             value: categories.map(m => m.replace(/_/g, ' ').toTitleCase()).join('\n')
           }
         ],
@@ -31,7 +31,7 @@ exports.exec = async (Bastion, message, args) => {
     return await message.channel.send({
       embed: {
         color: Bastion.colors.RED,
-        title: 'Cateogry de commande introuvable',
+        title: 'Category de commande introuvable',
         description: 'Utilisez la commande `commands` sans aucun argument pour obtenir une liste de toutes les catégories de commandes disponibles.'
       }
     });
